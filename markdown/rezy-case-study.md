@@ -20,7 +20,7 @@ At this point, I started to create a brand guide for my brand redesign into Rezy
 I started to bring my screens to low-fidelity and incorporate them into another interaction flow with the frames I created. With sketches in mind of the microinteractions I wanted to incorporate, I could then define the rules of the new animations and think through the process of prototyping them.
 
 ## Final Product
-I was able to incorporate all 5 of the microinteractions I wanted to implement, all within Figma's smart animation feature. (link to the final project).
+I was able to incorporate all 5 of the microinteractions I wanted to implement, all within Figma's smart animation feature. [link to the final project](https://www.figma.com/design/awUqphJlNpPBZR8eN6djmG/IDM-213-001-ckl49-Rezy?node-id=1-2769&t=U5UlHxpJDFkLiUD8-1).
 
 1. Card Expansion
 I wanted to create a card expansion animation where it would take the image and enlarge it. Before, it was just a simple move in from the bottom animation, so this offers a different experience. ↓
