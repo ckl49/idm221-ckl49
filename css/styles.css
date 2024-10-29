@@ -92,3 +92,7 @@ section {
 .index section {
     padding-top: 10rem;
 }
+
+.with-logo-menu {
+    display: inline-block;
+}
