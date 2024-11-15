@@ -8,9 +8,19 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header class="with-logo-menu">
+        <div>
+            <div> 
+                <a class="logo" href="index.html">Casey Lee</a>
+            </div>
+            <div>
+                <a class="menu-icon" href="#bottom"><img src="icons/menu-icon-light-mode.svg" alt="menu"></a>
+            </div>
+        </div>
+    </header>
     <header class="header">
         <h1>Ambee Coffee Co. Website Redesign</h1>
-        <img src="graphics/ambee-cover.jpg" alt="ambee cover mockup">
+        <img class="cover" src="graphics/ambee-cover.jpeg" alt="ambee cover mockup">
         <p>Ambee Coffee Co. is a small cafe located in central New Jersey. This is one of my all time favorite cafes, which is why I decided to redesign it. This project took place over 6 months with the goal to have high fidelity prototypes of 8 potential pages on their desktop, mobile, and tablet websites.</p>  
         <ul>
             <li><b>Role:</b>UI Designer, solo</li>
@@ -19,71 +29,88 @@
          </ul>
     </header>
     <main>
-        <section class="problems">
+        <section>
             <h2>The Problems</h2>
             <ol>
                 <li>Inconsistent page elements and headers</li>
                 <li>Does their website branding correspond with their physical storefront?</li>
                 <li>How can we increase marketability and interest?</li>
             </ol>
-            <a href="www.">Here is their original website.</a>
+            <p class="no-margin">
+                This is what their old website used to look like:
+            </p>
+            <img src="graphics/ambee-original.jpg" alt="original landing page">
             <p>For our target demographic, I created a user persona to define who that person would be. Because they are a cafe, I created a type of person who leaned more towards the younger crowd who need a place to study and love caffeine.</p>
+            <img src="graphics/ambee-persona.jpg" alt="user persona for ambee">
         </section>
-        <section class="heuristic">
+        <section>
+            <h3>Heuristic Evaluations</h3>
             <p>We went through two heuristic evaluations to first find out what we could improve, and then to retest if we succeeded in fixing the flaws we were experiencing in our design.</p>
-            <p>Link to the 3 heuristic evaluations</p>
+            <p>Link to the 3 heuristic evaluations:</p>
             <ul>
                 <li><a href="https://docs.google.com/spreadsheets/d/1chh57SnX5S67TevDA97YUxwpPVX0m2Aj/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject A Heuristic Eval.</a></li>
                 <li><a href="https://docs.google.com/spreadsheets/d/1sgYw2TSprRGgQUNBPzA0TbXxN89lGTWs/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject B Heuristic Eval.</a></li>
                 <li><a href="https://docs.google.com/spreadsheets/d/1RtvwLkK6WwnUBxbpDbq8nHO6Y6oNhIUK/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject C Heuristic Eval.</a></li>
             </ul>
+            <img src="graphics/ambee-subject-a.jpg" alt="Heuristic Evaluation A">
+            <img src="graphics/ambee-subject-b.jpg" alt="Heuristic Evaluation B">
+            <img src="graphics/ambee-subject-c.jpg" alt="Heuristic Evaluation C">
         </section>
-        <section class="final">
-            <a href="https://www.figma.com/file/6sIOCqICN6TuVrUqPs4Tkg/Websited-Redesign%3A-Ambee-Coffe-Co.?type=design&node-id=0%3A1&mode=design&t=RcjrGq3rfciiA5LT-1">Link to my final prototypes</a>
-            <a href="https://www.ambee.coffee/">Link to original website</a>
+        <section class="ambee-final">
+            <h2>Final Design</h2>
+            <button class="explore-button" id="final-prototype-button"><a href="https://www.figma.com/file/6sIOCqICN6TuVrUqPs4Tkg/Websited-Redesign%3A-Ambee-Coffe-Co.?type=design&node-id=0%3A1&mode=design&t=RcjrGq3rfciiA5LT-1">Link to final prototype</a></button>
             <p>While I went through two iterations cycles for this design, I ultimately came up with these 8 screens. From the first version, I learned that I had to be more concise with information, and reduce the amount of information going on to reduce cognitive load. I learned the importance of negative space and spacing between elements.</p>
-            <div class="style-guide">
+            <div>
                 <h3>Style Guide</h3>
+                <img src="graphics/ambee-style-guide.jpg" alt="ambee style guide">
             </div>
-            <div class="desktop-prototype">
+            <div>
                 <h3>Desktop Prototypes</h3>
+                <img src="graphics/ambee-desktop-homepage.jpeg" alt="ambee desktop homepage">
             </div>
-            <div class="mobile-prototype">
-                <h3>Prototypes</h3>
+            <div>
+                <h3>Mobile Prototypes</h3>
                 <p>My mobile designs look slightly different than the desktop designs because I wanted to practice IOS principles such as rounder, softer features and press-ability of buttons.</p>
+                <img src="graphics/ambee-homepage-mobile.jpeg" alt="ambee homepage mobile">
             </div>
-            <div class="highlights">
+            <div>
                 <h3>Highlights</h3>
                 <div>
-                    <b>1. Location Overlays</b>
-                    <p>I wanted to create intuitive animations for prototyping the locations page. I realized I had to take two different approaches for different screen sizes.</p>
+                    <div>
+                        <b>1. Location Overlays</b>
+                        <p>I wanted to create intuitive animations for prototyping the locations page. I realized I had to take two different approaches for different screen sizes.</p>
+                    </div>
                     <div>
                         <i>Desktop Locations Page</i>
                         <p>I experimented with clicking the component on the left to change the information or image shown on the right.</p>
-                        <img src="graphics/ambee-desktop-locations.jpeg" alt="desktop locations page">
+                        <img src="graphics/ambee-desktop-locations.jpg" alt="desktop locations page">
                     </div>
                     <div>
                         <i>Mobile Locations Page</i>
                         <p>I wanted all information to be accessible on one screen without having to scroll, so I simplified the original version and used an overlay to present the location information.</p>
-                        <img src="graphics/ambee-mobile-locations.jpeg" alt="mobile locations page">
+                        <img src="graphics/ambee-mobile-locations.jpg" alt="mobile locations page">
                     </div>
                 </div>
                 <div>
-                    <b>2. Different Approach at Product Pages</b>
-                    <p>I played with buttons instead of drop down menus for customizing products. I think this adds a more playful effect to the process.</p>
+                    <div>
+                        <b>2. Different Approach at Product Pages</b>
+                        <p>I played with buttons instead of drop down menus for customizing products. I think this adds a more playful effect to the process.</p>
+                    </div>
                     <div>
                         <i>Product Page</i>
                         <p>Experimented with clicking component on the left to change the information or image shown on the right, and on mobile it brings an overlay.</p>
-                        <img src="graphics/ambee-desktop-productpage2.0.jpeg" alt="desktop products page">
-                        <img src="graphics/ambee-mobile-product-latte.jpeg" alt="mobile products page">
+                        <img src="graphics/ambee-desktop-product.jpg" alt="desktop products page">
+                        <img src="graphics/ambee-mobile-product.jpeg" alt="mobile products page">
                     </div>
                 </div>
             </div>
-            <section>
+            <div>
                 <h2>Conclusion</h2>
-                <p>Coming into this with no design or Figma experience at all, I have honestly learned a lot about designing with the user in mind. It is very important to use design principles to back the choices we make, even including the smallest thing like color choice or spacing between letters.</p>
-                <p>This also taught me a lot about time management and getting on my pages for the due dates. I realize how I work as a designer and creating timelines for myself was important. I think in the end, I was able to reach my design goals and create a website that correlates to their physical storefront much more.</p>
-            </section>
+                <div>
+                    <p>Coming into this with no design or Figma experience at all, I have honestly learned a lot about designing with the user in mind. It is very important to use design principles to back the choices we make, even including the smallest thing like color choice or spacing between letters.</p>
+                    <p>This also taught me a lot about time management and getting on my pages for the due dates. I realize how I work as a designer and creating timelines for myself was important. I think in the end, I was able to reach my design goals and create a website that correlates to their physical storefront much more.</p>
+                </div>
+            </div>
         </section>
     </main>
     <nav class="main-menu">
@@ -93,5 +120,6 @@
         <li><a href="/about.html">About</a></li>
         <li><a href="contact.html">Contact Me</a></li>
     </nav>
+    <div id="bottom"></div>
 </body>
 </html>
