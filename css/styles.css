@@ -277,8 +277,8 @@ div {
     }
 
     img:last-child {
-        max-width: 15vw;
-        margin: 0;
+        max-width: 10vw;
+        margin: 0 4px 0 0;
     }
 
     div {
@@ -504,7 +504,7 @@ div {
 }
 
 .Rezy {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     line-height: 2rem;
 }
 
@@ -526,6 +526,15 @@ div {
     }
 }
 
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.p-big {
+    font-size: 1.5rem;
+}
+
 .ambee-final {
     div {
         margin-bottom: 2rem;
@@ -543,5 +552,4 @@ div {
 #final-prototype-button {
     margin: 0.5rem 0 1.5rem 0;
 }
-
 
