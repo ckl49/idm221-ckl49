@@ -37,8 +37,8 @@ html{
 --secondary-color-dark: #d86f5f;
 --tertiary-color-dark: #e76454;
 
---heading-font: Bricolage,sans-serif;
---text-font: Figtree, sans-serif;
+--heading-font: Bricolage, Arial, sans-serif;
+--text-font: Figtree, Arial, sans-serif;
 
 --rhythm: 0.5rem;
 --rhythm-list: 1.5rem;
@@ -127,16 +127,16 @@ button {
     
 }
 
-a:link {
+.normal-link a:link {
     color: var(--primary-color-light);
     text-decoration: underline;
 }
 
-a:active {
+.normal-link a:active {
     color: var(--secondary-color-light)
 }
 
-a:visited {
+.normal-link a:visited {
     color: var(--tertiary-color-light)
 }
 
@@ -210,7 +210,6 @@ section {
 }
 
 div {
-    /* margin-block-end: 2rem; */
     margin-block-start: 0;
     align-items: center;
 
@@ -258,6 +257,11 @@ div {
     list-style: none;
     margin-top: 55vh;
     width: auto;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .main-menu li{
@@ -265,6 +269,19 @@ div {
     line-height: 4rem;
     padding-left: var(--rhythm);
     margin-bottom: 0;
+
+    a:link {
+        color: var(--primary-color-light);
+        text-decoration: underline;
+    }
+    
+        a:active {
+        color: var(--secondary-color-light)
+    }
+    
+        a:visited {
+        color: var(--tertiary-color-light)
+    }   
 }
 
 .with-logo-menu {
@@ -298,14 +315,6 @@ div {
     }
 }
 
-#bottom {
-    margin-block-end: 0;
-
-    p {
-        margin: 0;
-        font-size: 0.7rem;
-    }
-}
 
 .index {
     margin-top: 3rem;
@@ -342,9 +351,13 @@ div {
 }
 
 .explore-button {
-    color: var(--foreground-color-dark);
+    display: flex;
+    justify-content: center;
+    color: var(--background-color-light);
+    text-decoration: none;
     background: var(--tertiary-color-light);
     padding: var(--rhythm);
+    width: 100%;
     border-radius: 0.5rem;
     border-color: transparent;
     box-shadow: -2px 2px 4px 0.5px rgba(15, 15, 15, 0.1);
@@ -365,16 +378,47 @@ div {
     }
 }
 
-.explore-button:active {
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.back-to-home-button {
+    display: flex;
+    color: var(--foreground-color-dark);
+    background: var(--tertiary-color-light);
+    padding: var(--rhythm);
+    margin-block-start: 1.5rem;
+    /* width: 100%; */
+    width: calc(100% - 1rem);
+    justify-content: center;
+    align-self: center;
+    border-radius: 0.5rem;
+    border-color: transparent;
+    box-shadow: -2px 2px 4px 0.5px rgba(15, 15, 15, 0.1);
+
+    a:link {
+        color: var(--foreground-color-dark);
+        text-decoration: none;
+    }
+    
+    a:active {
+        color: var(--foreground-color-dark);
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: var(--foreground-color-dark);
+        text-decoration: underline;
+    }
+}
+
+.back-to-home-button:active {
     background: var(--secondary-color-light);
 }
 
-.explore-button:visited {
-    background: var(--primary-color-light);
-}
-
 .header {
-    margin: 0 var(--rhythm);
+    /* margin: 0 var(--rhythm); */
     margin-block-start: 2rem;
 
     p {
@@ -399,14 +443,14 @@ div {
     border-radius: 1rem;
 
     h2 {
-        margin-block-start: 0.5rem;
+        margin-block-start: 0.25rem;
         margin-block-end: 0;
         line-height: 1.9rem;
         cursor: pointer;
     }
     
     p {
-        margin-block-start: 0.25rem;
+        margin-block-start: 0.5rem;
         margin-block-end: var(--rhythm);
         line-height: 1.3rem;
     }
@@ -418,30 +462,17 @@ div {
 
     a {
         color: var(--foreground-color-light);
+        text-decoration: none;
     }
 
     a:link {
         color: var(--foreground-color-light);
-        text-decoration: underline;
+        text-decoration: none;
     }
     
     a:active {
-        color: var(--midground-color-light)
-    }
-
-    .explore-button a:link {
-        color: var(--foreground-color-dark);
-        text-decoration: none;
-    }
-
-    .explore-button a:active {
-        color: var(--foreground-color-dark);
-        text-decoration: none;
-    }
-
-    .explore-button a:visited {
-        color: var(--foreground-color-dark);
-        text-decoration: none;
+        color: var(--midground-color-light);
+        text-decoration: underline;
     }
 }
 
@@ -451,9 +482,14 @@ div {
 }
 
 .resume {
+    margin-block-start: 0.5rem;
+    
+    section {
+        margin-block-start: 2.3rem;
+    }
 
     div{
-        margin-top: 0.75rem;
+        margin-top: 1.3rem;
     }
 
     p {
@@ -477,6 +513,10 @@ div {
 }
 
 .resume-class {
+    margin-block-start: 0.5rem;
+}
+
+.resume-skills {
     p {
         line-height: 1.5rem;
         margin-block-end: 0.75rem;
@@ -496,6 +536,7 @@ div {
 
 .about {
     margin-top: 0;
+    margin: 0 var(--rhythm);
 
     img {
         border-radius: 0.5rem;   
@@ -548,8 +589,22 @@ div {
         margin-bottom: 3rem
     }
 }
+/* 
+.contact-header{
+    margin-top: 10vh;
+    margin: 0;
+} */
 
 #final-prototype-button {
     margin: 0.5rem 0 1.5rem 0;
 }
 
+
+#bottom {
+    margin-block-end: 0;
+
+    p {
+        margin: 0;
+        font-size: 0.7rem;
+    }
+}

@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="with-logo-menu">
-        <div>
+        <div id="top-of-page">
             <div> 
                 <a class="logo" href="index.html">Casey Lee</a>
             </div>
@@ -69,45 +69,40 @@
             <p>
                 I was able to incorporate all 5 of the microinteractions I wanted to implement, all within Figma's smart animation feature
             </p>
-            <button class="explore-button" id="final-prototype-button"><a href="https://www.figma.com/design/awUqphJlNpPBZR8eN6djmG/IDM-213-001-ckl49-Rezy?node-id=1-2769&t=U5UlHxpJDFkLiUD8-1" target="_blank">Final project</a></button>
-
+            <a class="explore-button" id="final-prototype-button" href="https://www.figma.com/design/awUqphJlNpPBZR8eN6djmG/IDM-213-001-ckl49-Rezy?node-id=1-2769&t=U5UlHxpJDFkLiUD8-1" target="_blank">Final project</a>
             <div>
                 <h3>1. Card Expansion</h3>
                 <p>I wanted to create a card expansion animation where it would take the image and enlarge it. Before, it was just a simple move in from the bottom animation, so this offers a different experience. ↓</p>
-                <video width="auto" height="400" controls>
+                <video width="300" height="400" controls poster="graphics/rezy-poster-card.png">
                     <source src="video/rezy-expansion.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
                   </video>
             </div>
             <div>
                 <h3>2. Number of Guests</h3>
                 <p>I wanted to create a sliding animation to show the number of guests being chosen, and exaggerated the bounce. I also learned how to implement auto layout to ensure a smooth transition between switching sections. ↓</p>
-                <video width="auto" height="400" controls>
+                <video width="300" height="400" controls poster="graphics/rezy-poster-guest.png">
                     <source src="video/rezy-guests.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
                   </video>
             </div>
             <div>
                 <h3>3. Shake Animation of Icons</h3>
                 <p>To make the process of selecting an occasion more fun, I wanted to implement the shaking of the icons when pressed. ↓</p>
-                <video width="auto" height="400" controls>
+                <video width="300" height="400" controls poster="graphics/rezy-poster-shake.png">
                     <source src="video/rezy-wiggle.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
                   </video>
+            </div>
             <div>
                 <h3>4. Bounce of Elements</h3>
                 <p>When switching between 3 consecutive frames that essentially have the same content, I wanted to exaggerate the bounce when swiping. I believe it increases interaction and interest while not taking away from the content. ↓</p>
-                <video width="auto" height="400" controls>
+                <video width="300" height="400" controls poster="graphics/rezy-poster-bounce.png">
                     <source src="video/rezy-bounce.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
                   </video>
             </div>
             <div>
                 <h3>5. Loading Animation</h3>
                 <p>Their loading animation before felt very stale and not exciting. I wanted to implement my new logo with a new object, a name card. I think this is my most favorite animation I made for this project! ↓</p>
-                <video width="auto" height="400" controls>
+                <video width="300" height="400" controls poster="graphics/rezy-poster-loading.png">
                     <source src="video/rezy-loading.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
                   </video>
             </div>
         </section>
@@ -125,15 +120,22 @@
                 </p>
             </div>
         </section>
+        <div class="justify-center">
+            <a class="back-to-home-button" href="index.html">Back to Home</a>
+        </div> 
     </main>
     <nav class="main-menu">
-        <li>Menu</li>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/resume.html">Resume</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <ul>
+            <li>Menu</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/resume.html">Resume</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="#top-of-page">← Back</a></li>
+        </ul>
     </nav>
     <div id="bottom">
         <p>Copyright Casey Lee 2024</p>
-    </div></body>
+    </div>
+</body>
 </html>

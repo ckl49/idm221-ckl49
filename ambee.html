@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="with-logo-menu">
-        <div>
+        <div id="top-of-page">
             <div> 
                 <a class="logo" href="index.html">Casey Lee</a>
             </div>
@@ -48,9 +48,9 @@
             <p>I went through two heuristic evaluations to first find out what I could improve, and then to retest if we succeeded in fixing the flaws I was experiencing in my design.</p>
             <p>Link to the 3 heuristic evaluations:</p>
             <ul>
-                <li><a href="https://docs.google.com/spreadsheets/d/1chh57SnX5S67TevDA97YUxwpPVX0m2Aj/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject A Heuristic Eval.</a></li>
-                <li><a href="https://docs.google.com/spreadsheets/d/1sgYw2TSprRGgQUNBPzA0TbXxN89lGTWs/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject B Heuristic Eval.</a></li>
-                <li><a href="https://docs.google.com/spreadsheets/d/1RtvwLkK6WwnUBxbpDbq8nHO6Y6oNhIUK/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject C Heuristic Eval.</a></li>
+                <li class="normal-link"><a href="https://docs.google.com/spreadsheets/d/1chh57SnX5S67TevDA97YUxwpPVX0m2Aj/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject A Heuristic Eval.</a></li>
+                <li class="normal-link"><a href="https://docs.google.com/spreadsheets/d/1sgYw2TSprRGgQUNBPzA0TbXxN89lGTWs/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject B Heuristic Eval.</a></li>
+                <li class="normal-link"><a href="https://docs.google.com/spreadsheets/d/1RtvwLkK6WwnUBxbpDbq8nHO6Y6oNhIUK/edit?usp=sharing&ouid=101454500755559952304&rtpof=true&sd=true" target="_blank">Subject C Heuristic Eval.</a></li>
             </ul>
             <img src="graphics/ambee-subject-a.jpg" alt="Heuristic Evaluation A">
             <img src="graphics/ambee-subject-b.jpg" alt="Heuristic Evaluation B">
@@ -58,7 +58,7 @@
         </section>
         <section class="ambee-final">
             <h2>Final Design</h2>
-            <button class="explore-button" id="final-prototype-button"><a href="https://www.figma.com/file/6sIOCqICN6TuVrUqPs4Tkg/Websited-Redesign%3A-Ambee-Coffe-Co.?type=design&node-id=0%3A1&mode=design&t=RcjrGq3rfciiA5LT-1">Link to final prototype</a></button>
+            <a class="explore-button" id="final-prototype-button" href="https://www.figma.com/file/6sIOCqICN6TuVrUqPs4Tkg/Websited-Redesign%3A-Ambee-Coffe-Co.?type=design&node-id=0%3A1&mode=design&t=RcjrGq3rfciiA5LT-1">Link to final prototype</a>
             <p>While I went through two iterations cycles for this design, I ultimately came up with these 8 screens. From the first version, I learned that I had to be more concise with information, and reduce the amount of information going on to reduce cognitive load. I learned the importance of negative space and spacing between elements.</p>
             <div>
                 <h3>Style Guide</h3>
@@ -104,21 +104,25 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <h2>Conclusion</h2>
-                <div>
-                    <p>Coming into this with no design or Figma experience at all, I have honestly learned a lot about designing with the user in mind. It is very important to use design principles to back the choices we make, even including the smallest thing like color choice or spacing between letters.</p>
-                    <p>This also taught me a lot about time management and getting on my pages for the due dates. I realize how I work as a designer and creating timelines for myself was important. I think in the end, I was able to reach my design goals and create a website that correlates to their physical storefront much more.</p>
-                </div>
-            </div>
         </section>
+        <section>
+            <h2>Conclusion</h2>
+                <p>Coming into this with no design or Figma experience at all, I have honestly learned a lot about designing with the user in mind. It is very important to use design principles to back the choices we make, even including the smallest thing like color choice or spacing between letters.</p>
+                <p>This also taught me a lot about time management and getting on my pages for the due dates. I realize how I work as a designer and creating timelines for myself was important. I think in the end, I was able to reach my design goals and create a website that correlates to their physical storefront much more.</p>
+        </section>
+        <div class="justify-center">
+            <a class="back-to-home-button" href="index.html">Back to Home</a>
+        </div>  
     </main>
     <nav class="main-menu">
-        <li>Menu</li>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/resume.html">Resume</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+        <ul>
+            <li>Menu</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/resume.html">Resume</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact Me</a></li>
+            <li><a href="#top-of-page">← Back</a></li>
+        </ul>
     </nav>
     <div id="bottom">
         <p>Copyright Casey Lee 2024</p>
