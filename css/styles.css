@@ -387,6 +387,7 @@ div img:last-child {
     padding: var(--rhythm);
     margin-block-start: 1.5rem;
     font-family: var(--text-font);
+    text-decoration: none;
     /* width: 100%; */
     width: calc(100% - 1rem);
     justify-content: center;
