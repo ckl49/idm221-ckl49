@@ -103,6 +103,7 @@ p {
     font-weight: 350;
 }
 
+/* this wasn't really needed but can be referred to */
 /* button {
     font-family: var(--text-font);
     font-weight: 400;
@@ -347,6 +348,8 @@ div img:last-child {
         margin-block-start: 0;
     }
 
+    
+/* explore button used on the front page */
 .explore-button {
     display: flex;
     justify-content: center;
@@ -359,6 +362,7 @@ div img:last-child {
     border-color: transparent;
     box-shadow: -2px 2px 4px 0.5px rgba(15, 15, 15, 0.1);
 }
+
 .explore-button a:link {
         color: var(--foreground-color-dark);
         text-decoration: none;
@@ -374,12 +378,12 @@ div img:last-child {
         text-decoration: underline;
 }
 
-
 .justify-center{
     display: flex;
     justify-content: center;
 }
 
+/* back to home displayed on all internal pages at the end */
 .back-to-home-button {
     display: flex;
     color: var(--foreground-color-dark);
@@ -477,12 +481,12 @@ div img:last-child {
         text-decoration: underline;
 }
 
-
 .cover {
     border-radius: 0.5rem;
     margin: 1rem 0 0 0;
 }
 
+/* changing all the resume features and spacing, especially for each respective section */
 .resume {
     margin-block-start: 0.5rem;
 } 
@@ -564,7 +568,6 @@ div img:last-child {
         margin-bottom: 1.5rem
 }
 
-
 .contact-list {
     list-style: none;
     padding: 0;
@@ -596,11 +599,11 @@ div img:last-child {
     margin: 0.5rem 0 1.5rem 0;
 }
 
-
 #bottom {
     margin-block-end: 0;
 }
 
+/* for the jump to the bottom id */
 #bottom p {
         margin: 0;
         font-size: 0.7rem;
